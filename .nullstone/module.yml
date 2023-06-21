@@ -1,0 +1,13 @@
+org_name: nullstone
+name: aws-fargate-task
+friendly_name: Fargate Task
+description: Creates a task that executes using AWS Fargate
+category: app
+subcategory: container
+provider_types:
+    - aws
+platform: ecs
+subplatform: fargate
+type: ""
+appCategories: []
+is_public: true
