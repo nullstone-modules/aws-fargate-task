@@ -1,2 +1,2 @@
-# 0.1.0 (Unreleased)
-* Initial draft
+# 0.1.0 (Jun 21, 2023)
+* Initial release
