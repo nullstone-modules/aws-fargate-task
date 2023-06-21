@@ -1,9 +1,9 @@
 # Fargate Task
 
-This module is used to create a container task.
-This module uses AWS Fargate, which is a technology that allows you to run container applications without managing EC2 boxes (Virtual Machines).
+This app module is used to create a container task.
+A task is a short-lived app that executes on-demand.
 
-This supports running container applications as a short-lived service triggered on-demand, on a schedule, or from a queue.
+After creating the application, add an `Event` capability to trigger the task from items in a queue, on a schedule, or directly. 
 
 ## Security & Compliance
 
@@ -16,6 +16,10 @@ Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leadin
 [![ISO27001](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate-task/iso)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=nullstone-modules%2Faws-fargate-task&benchmark=ISO27001)
 [![SOC2](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate-task/soc2)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=nullstone-modules%2Faws-fargate-task&benchmark=SOC2)
 [![HIPAA](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate-task/hipaa)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=nullstone-modules%2Faws-fargate-task&benchmark=HIPAA)
+
+## Platform
+
+This module uses [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html), which is a technology that allows you to run ECS container applications without managing EC2 boxes (Virtual Machines).
 
 ## App Support
 
