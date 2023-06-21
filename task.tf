@@ -60,6 +60,7 @@ resource "aws_ecs_task_definition" "this" {
 resource "aws_iam_role" "task" {
   name               = "task-${local.resource_name}"
   assume_role_policy = data.aws_iam_policy_document.task_assume.json
+  tags               = local.tags
 }
 
 data "aws_iam_policy_document" "task_assume" {
