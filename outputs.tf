@@ -78,6 +78,11 @@ output "app_security_group_id" {
   description = "string ||| The ID of the security group attached to the app."
 }
 
+output "task_subnet_ids" {
+  value       = local.private_subnet_ids
+  description = "list(string) ||| A list of Subnet IDs that a Task should be placed when executing."
+}
+
 output "private_urls" {
   value       = local.private_urls
   description = "list(string) ||| A list of URLs only accessible inside the network"
