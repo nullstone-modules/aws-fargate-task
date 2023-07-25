@@ -18,6 +18,10 @@ Bridgecrew is the leading fully hosted, cloud-native solution providing continuo
 ![SOC2](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate-task/soc2)
 ![HIPAA](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-fargate-task/hipaa)
 
+## Platform
+
+This module uses [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html), which is a technology that allows you to run ECS container applications without managing EC2 boxes (Virtual Machines).
+
 ## App Support
 
 - Environment Variables
