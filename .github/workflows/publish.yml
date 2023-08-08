@@ -1,8 +1,12 @@
 name: Nullstone
 on:
   push:
+    branches:
+      - compliance
     tags:
       - 'v*'
+
+permissions: read-all
 
 env:
   NULLSTONE_ORG: nullstone
