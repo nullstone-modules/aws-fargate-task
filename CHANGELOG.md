@@ -1,3 +1,8 @@
+# 0.2.0 (Aug 08, 2023)
+* Added compliance scanning.
+* Updated `README.md` with application management info.
+* Fixed compliance issues.
+
 # 0.1.4 (Jul 25, 2023)
 * Switched to using the cluster from the namespace to ensure proper isolation.
 
