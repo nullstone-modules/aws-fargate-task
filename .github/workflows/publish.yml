@@ -1,8 +1,6 @@
 name: Nullstone
 on:
   push:
-    branches:
-      - compliance
     tags:
       - 'v*'
 
