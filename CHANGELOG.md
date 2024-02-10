@@ -1,3 +1,6 @@
+# 0.2.1 (Feb 10, 2024)
+* Added permissions to list image tags in image repository.
+
 # 0.2.0 (Aug 08, 2023)
 * Added compliance scanning.
 * Updated `README.md` with application management info.
