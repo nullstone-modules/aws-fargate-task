@@ -1,3 +1,6 @@
+# 0.2.2 (Feb 20, 2024)
+* Added support for variable and secret interpolation.
+
 # 0.2.1 (Feb 10, 2024)
 * Added permissions to list image tags in image repository.
 
