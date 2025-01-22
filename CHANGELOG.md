@@ -1,3 +1,6 @@
+# 0.2.3 (Jan 22, 2025)
+* When an app secret is removed, it is immediately deleted from AWS secrets manager.
+
 # 0.2.2 (Feb 20, 2024)
 * Added support for variable and secret interpolation.
 
