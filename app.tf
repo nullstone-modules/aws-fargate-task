@@ -12,7 +12,9 @@ locals {
   app_metadata = tomap({
     // Inject app metadata into capabilities here (e.g. security_group_id, role_name)
     security_group_id    = aws_security_group.this.id
+    subnet_ids           = local.private_subnet_ids
     role_name            = aws_iam_role.task.name
+    execution_role_name  = aws_iam_role.execution.name
     main_container       = local.main_container_name
     service_port         = 0
     log_group_name       = module.logs.name
