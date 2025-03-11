@@ -1,3 +1,6 @@
+# 0.2.5 (Mar 10, 2025)
+* Emitting `subnet_ids` in `app_metadata` as comma-delimited string.
+
 # 0.2.4 (Mar 10, 2025)
 * Added `subnet_ids` and `execution_role_name` to capabilities variables `app_metadata`.
 
