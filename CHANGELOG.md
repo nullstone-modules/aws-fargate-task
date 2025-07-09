@@ -1,3 +1,6 @@
+# 0.2.6 (Jul 09, 2025)
+* Added `nullstone.io/version` tag to task definition.
+
 # 0.2.5 (Mar 10, 2025)
 * Emitting `subnet_ids` in `app_metadata` as comma-delimited string.
 
