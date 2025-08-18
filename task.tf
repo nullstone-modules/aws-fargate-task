@@ -20,6 +20,7 @@ locals {
     volumesFrom = []
 
     logConfiguration = local.log_configuration
+    linuxParameters  = local.linux_params
   }
 }
 
