@@ -1,3 +1,6 @@
+# 0.2.8 (Aug 18, 2025)
+* Added support for `linuxParameters` in capabilities.
+
 # 0.2.7 (Jul 21, 2025)
 * Upgraded all terraform providers to latest.
 
