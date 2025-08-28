@@ -1,3 +1,6 @@
+# 0.2.9 (Aug 28, 2025)
+* Fixed `var.memory` description.
+
 # 0.2.8 (Aug 18, 2025)
 * Added support for `linuxParameters` in capabilities.
 
