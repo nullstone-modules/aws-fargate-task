@@ -12,7 +12,7 @@ locals {
   log_configuration = {
     logDriver = "awslogs"
     options = {
-      "awslogs-region"        = data.aws_region.this.name
+      "awslogs-region"        = data.aws_region.this.region
       "awslogs-group"         = module.logs.name
       "awslogs-stream-prefix" = local.block_name
     }

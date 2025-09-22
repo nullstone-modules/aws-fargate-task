@@ -1,3 +1,6 @@
+# 0.3.0 (Sep 22, 2025)
+* Upgraded terraform providers.
+
 # 0.2.9 (Aug 28, 2025)
 * Fixed `var.memory` description.
 
