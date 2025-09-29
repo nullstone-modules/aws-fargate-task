@@ -4,7 +4,7 @@ module "logs" {
   name              = local.resource_name
   tags              = local.tags
   enable_log_reader = true
-  retention_in_days = 90
+  retention_in_days = local.log_retention_in_days
   kms_key_arn       = aws_kms_alias.this.arn
 }
 
