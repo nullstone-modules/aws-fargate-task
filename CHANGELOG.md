@@ -1,3 +1,6 @@
+# 0.3.2 (Mar 05, 2026)
+* Upgrade to latest ns terraform provider to improve env var interpolation
+
 # 0.3.1 (Sep 29, 2025)
 * Configure log retention via cluster configuration.
 
