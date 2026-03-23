@@ -19,9 +19,24 @@ output "log_group_name" {
 }
 
 output "log_reader" {
-  value       = module.logs.reader
-  description = "object({ name: string, access_key: string, secret_key: string }) ||| An AWS User with explicit privilege to read logs from Cloudwatch."
+  value       = merge(module.logs.reader, { session_duration : 3600 })
+  description = "object({ role_arn: string, session_duration: number }) ||| An AWS Role with explicit privilege to read logs from Cloudwatch."
   sensitive   = true
+}
+
+output "metrics_provider" {
+  value       = "cloudwatch"
+  description = "string ||| "
+}
+
+output "metrics_reader" {
+  value       = merge(module.logs.reader, { session_duration : 3600 })
+  description = "object({ role_arn: string, session_duration: number }) ||| An AWS Role with explicit privilege to read metrics from Cloudwatch."
+  sensitive   = true
+}
+
+output "metrics_mappings" {
+  value = local.metrics_mappings
 }
 
 output "image_repo_name" {
@@ -35,27 +50,13 @@ output "image_repo_url" {
 }
 
 output "image_pusher" {
-  value = {
-    name       = try(aws_iam_user.image_pusher[0].name, "")
-    access_key = try(aws_iam_access_key.image_pusher[0].id, "")
-    secret_key = try(aws_iam_access_key.image_pusher[0].secret, "")
-  }
-
-  description = "object({ name: string, access_key: string, secret_key: string }) ||| An AWS User with explicit privilege to push images."
-
-  sensitive = true
+  value       = local.pusher
+  description = "object({ role_arn: string, session_duration: number }) ||| An AWS role with explicit privilege to push images."
 }
 
 output "deployer" {
-  value = {
-    name       = aws_iam_user.deployer.name
-    access_key = aws_iam_access_key.deployer.id
-    secret_key = aws_iam_access_key.deployer.secret
-  }
-
-  description = "object({ name: string, access_key: string, secret_key: string }) ||| An AWS User with explicit privilege to deploy ECS services."
-
-  sensitive = true
+  value       = local.deployer
+  description = "object({ role_arn: string, session_duration: number, name: string, access_key: string, secret_key: string}) ||| An AWS IAM identity with explicit privilege to deploy ECS services."
 }
 
 output "service_name" {
