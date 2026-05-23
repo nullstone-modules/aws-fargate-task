@@ -36,7 +36,7 @@ It does not provide support for attaching load balancers, API Gateways, etc.
 
 This application module supports various capabilities to handle execution of a Fargate Task.
 - Trigger: Enable events to execute Fargate Task (e.g. Cron Trigger, SQS Queue)
-- CLI Execution: `nullstone exec` (See [`exec`](https://docs.nullstone.io/getting-started/cli/docs.html#exec) for more information)
+- CLI Execution: `nullstone run` (See [`run`](https://docs.nullstone.io/getting-started/cli/docs.html#run) for more information)
 
 ## Logs
 

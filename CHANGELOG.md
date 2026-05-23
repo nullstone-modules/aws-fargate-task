@@ -1,3 +1,6 @@
+# 0.4.1 (May 23, 2026)
+* Fixed README instructions for running tasks.
+
 # 0.4.0 (Mar 22, 2026)
 * Migrated from AWS access keys to IAM roles for automation roles (push, deploy, log reader).
 
