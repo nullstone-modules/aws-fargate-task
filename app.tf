@@ -14,7 +14,9 @@ locals {
     security_group_id    = aws_security_group.this.id
     subnet_ids           = join(",", local.private_subnet_ids)
     role_name            = aws_iam_role.task.name
+    role_arn             = aws_iam_role.task.arn
     execution_role_name  = aws_iam_role.execution.name
+    execution_role_arn   = aws_iam_role.execution.arn
     main_container       = local.main_container_name
     service_port         = 0
     log_group_name       = module.logs.name

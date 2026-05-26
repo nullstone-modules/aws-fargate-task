@@ -1,3 +1,7 @@
+# 0.4.2 (May 26, 2026)
+* Added `role_arn` and `execution_role_arn` to capability variables.
+* Propagated tags from task definition to task.
+
 # 0.4.1 (May 23, 2026)
 * Fixed README instructions for running tasks.
 

@@ -16,6 +16,7 @@ resource "aws_cloudwatch_event_target" "this" {
     task_definition_arn    = aws_ecs_task_definition.this.arn
     launch_type            = "FARGATE"
     enable_execute_command = true
+    propagate_tags         = "TASK_DEFINITION"
 
     network_configuration {
       subnets          = local.private_subnet_ids
