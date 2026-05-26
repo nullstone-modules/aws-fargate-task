@@ -1,3 +1,6 @@
+# 0.4.3 (May 26, 2026)
+* Use "latest" revision for trigger task via events.
+
 # 0.4.2 (May 26, 2026)
 * Added `role_arn` and `execution_role_arn` to capability variables.
 * Propagated tags from task definition to task.
