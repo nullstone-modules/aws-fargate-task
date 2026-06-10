@@ -1,3 +1,6 @@
+# 0.4.4 (Jun 10, 2026)
+* Upgraded terraform providers.
+
 # 0.4.3 (May 26, 2026)
 * Use "latest" revision for trigger task via events.
 
