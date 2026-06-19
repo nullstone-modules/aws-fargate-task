@@ -1,3 +1,8 @@
+# 0.5.0 (Jun 19, 2026)
+* Upgraded `nullstone-io/ns` provider to `~> 0.11.0`.
+* Used `aws_tags` from `data.ns_workspace` to tag all resources via provider `default_tags`.
+* Upgraded capability scaffolding to reduce conflicts.
+
 # 0.4.5 (Jul 10, 2026)
 * Fixed ns tf provider.
 
