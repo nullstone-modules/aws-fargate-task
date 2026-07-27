@@ -1,3 +1,7 @@
+# 0.6.0 (Jul 27, 2026)
+* Switched to OpenTofu.
+* Upgraded providers.
+
 # 0.5.1 (Jul 15, 2026)
 * Added `image_repo_name` to capability `app_metadata`.
 

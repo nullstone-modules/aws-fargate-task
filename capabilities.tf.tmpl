@@ -20,6 +20,7 @@ module "{{ .TfModuleName }}" {
   }
 }
 {{ end }}
+
 locals {
   cap_modules = [
 {{- range $index, $element := .ExceptNeedsDestroyed }}
