@@ -4,6 +4,7 @@ friendly_name: Fargate Task
 description: Creates a task that executes using AWS Fargate
 category: app
 subcategory: container
+app_type: generic
 provider_types:
     - aws
 platform: ecs
