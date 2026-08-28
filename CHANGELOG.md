@@ -1,3 +1,6 @@
+# 0.6.1 (Aug 28, 2026)
+* Added base metrics to module outputs (`invocations` per event rule, `app/running_tasks`, `app/compute_time`, `app/cpu`, `app/memory`).
+
 # 0.6.0 (Jul 27, 2026)
 * Switched to OpenTofu.
 * Upgraded providers.
