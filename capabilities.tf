@@ -22,21 +22,27 @@ locals {
   cap_env_prefixes = tomap({
     x = ""
   })
+  // cap_prefixes is a map indexed by capability name which points to the env_prefix in local.cap_modules
+  cap_prefixes = tomap({
+    x = ""
+  })
 
   capabilities = {
     env = [
       {
-        cap_tf_id = "x"
-        name      = ""
-        value     = ""
+        cap_tf_id  = "x"
+        capability = "x"
+        name       = "EXAMPLE_ENV"
+        value      = ""
       }
     ]
 
     secrets = [
       {
-        cap_tf_id = "x"
-        name      = ""
-        value     = sensitive("")
+        cap_tf_id  = "x"
+        capability = "x"
+        name       = "EXAMPLE_SECRET"
+        value      = sensitive("")
       }
     ]
 
@@ -45,8 +51,9 @@ locals {
     // They will be flattened into list(string) when we output from this module
     private_urls = [
       {
-        cap_tf_id = "x"
-        url       = "http://example"
+        cap_tf_id  = "x"
+        capability = "x"
+        url        = "http://example"
       }
     ]
 
@@ -55,15 +62,17 @@ locals {
     // They will be flattened into list(string) when we output from this module
     public_urls = [
       {
-        cap_tf_id = "x"
-        url       = "https://example.com"
+        cap_tf_id  = "x"
+        capability = "x"
+        url        = "https://example.com"
       }
     ]
 
     log_configurations = [
       {
-        cap_tf_id = "x"
-        logDriver = "awslogs"
+        cap_tf_id  = "x"
+        capability = "x"
+        logDriver  = "awslogs"
         options = {
           "awslogs-region"        = data.aws_region.this.region
           "awslogs-group"         = module.logs.name
@@ -76,9 +85,10 @@ locals {
     // The name of each mount point will be added to the task as a volume, then mounted in the main container
     mount_points = [
       {
-        cap_tf_id = "x"
-        name      = "volume-name"
-        path      = "/path/on/main/disk"
+        cap_tf_id  = "x"
+        capability = "x"
+        name       = "volume-name"
+        path       = "/path/on/main/disk"
       }
     ]
 
@@ -86,6 +96,7 @@ locals {
     sidecars = [
       {
         cap_tf_id    = "x"
+        capability   = "x"
         name         = ""
         image        = ""
         essential    = false
@@ -103,10 +114,11 @@ locals {
     // The app module will use information about the app, cluster, and network to create event targets
     events = [
       {
-        cap_tf_id = "x"
-        rule_name = ""
-        role_arn  = ""
-        input     = "{}"
+        cap_tf_id  = "x"
+        capability = "x"
+        rule_name  = ""
+        role_arn   = ""
+        input      = "{}"
       }
     ]
   }
